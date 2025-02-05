@@ -101,10 +101,10 @@ wb_apply_border <- function(wb, sheet, df_style) {
       dims = crow$dims,
 
       bottom_color = openxlsx2::wb_color(crow$border.color.bottom),
-      left_color   = openxlsx2::wb_color(crow$border.color.bottom),
-      right_color  = openxlsx2::wb_color(crow$border.color.bottom),
-      top_color    = openxlsx2::wb_color(crow$border.color.bottom),
-
+      left_color   = openxlsx2::wb_color(crow$border.color.left),
+      right_color  = openxlsx2::wb_color(crow$border.color.right),
+      top_color    = openxlsx2::wb_color(crow$border.color.top),
+      
       bottom_border = purrr::pluck(crow,"border.width.bottom"),
       left_border   = purrr::pluck(crow,"border.width.left"),
       right_border  = purrr::pluck(crow,"border.width.right"),
