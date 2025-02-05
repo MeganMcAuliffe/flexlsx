@@ -111,9 +111,9 @@ wb_apply_border <- function(wb, sheet, df_style) {
       top_border    = purrr::pluck(crow,"border.width.top"),
 
       inner_hgrid = if(crow$multi_lines) hgrid_border else NULL,
-      inner_hcolor = if(crow$multi_lines) hgrid_color else NULL
+      inner_hcolor = if(crow$multi_lines) hgrid_color else NULL,
       
-      inner_vgrid = if(crow$multi_lines) "thin" else NULL,  # Example setting
+      inner_vgrid = if(crow$multi_lines) "thin" else NULL,  
       inner_vcolor = if(crow$multi_lines) openxlsx2::wb_color("white") else NULL
       
     )
